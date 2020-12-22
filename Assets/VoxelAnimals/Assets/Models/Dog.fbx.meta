@@ -1,15 +1,58 @@
 fileFormatVersion: 2
-guid: 8b73e8872ca76104bbca4ee2b704a1b4
+guid: 23087f4be52d60c488a49d499dfc98fb
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: jigsaw
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: power_jigsaw_low
-  externalObjects: {}
+    100000: Body
+    100002: //RootNode
+    100004: Dog
+    100006: Head
+    100008: LefFR
+    100010: LegBL
+    100012: LegBR
+    100014: LegFL
+    100016: Tail
+    400000: Body
+    400002: Dog
+    400004: //RootNode
+    400006: Head
+    400008: LefFR
+    400010: LegBL
+    400012: LegBR
+    400014: LegFL
+    400016: Tail
+    2100000: palette
+    2300000: Body
+    2300002: Dog
+    2300004: Head
+    2300006: LefFR
+    2300008: LegBL
+    2300010: LegBR
+    2300012: LegFL
+    2300014: Tail
+    3300000: Body
+    3300002: Dog
+    3300004: Head
+    3300006: LefFR
+    3300008: LegBL
+    3300010: LegBR
+    3300012: LegFL
+    3300014: Tail
+    4300000: Body
+    4300002: Head
+    4300004: Tail
+    4300006: LegBL
+    4300008: LegBR
+    4300010: LegFL
+    4300012: LefFR
+    4300014: Dog
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: palette
+    second: {fileID: 2100000, guid: c7e294e05bde65747aa9d03b71fd2096, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -37,16 +80,16 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
-    importBlendShapes: 0
-    importCameras: 0
-    importLights: 0
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -67,7 +110,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-  importAnimation: 0
+  importAnimation: 1
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
