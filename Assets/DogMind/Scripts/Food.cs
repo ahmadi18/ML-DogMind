@@ -61,4 +61,31 @@ public class Food : MonoBehaviour
             return calorieAmount > 0f;
         }
     }
+
+    /// <summary>
+    /// Manages the deduction of calories from food upon eating
+    /// </summary>
+    /// <param name="amount"> is the amount of calories eaten </param>
+    public float Feed(float amount)
+    {
+        float calorieTaken = Mathf.Clamp(amount, 0f, calorieAmount);
+
+        calorieAmount -= amount;
+
+        if(calorieAmount <= 0)
+        {
+            // No calorie remaining
+            calorieAmount = 0f;
+
+            // Disable the food and calorie colliders
+            calorieCollider.gameObject.SetActive(false);
+            foodCollider.gameObject.SetActive(false);
+
+            // Change food color to indicate that it is empty
+            foodMaterial.SetColor("_BaseColor", emptyFoodColor);
+        }
+
+        // Return the amount of calories that was taken
+        return calorieTaken;
+    }
 }
