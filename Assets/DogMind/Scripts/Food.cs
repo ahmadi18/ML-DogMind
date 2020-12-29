@@ -108,7 +108,8 @@ public class Food : MonoBehaviour
         MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
         foodMaterial = meshRenderer.material;
 
-        // Find colliders
-        flowerC
+        // Find food and calorie colliders
+        calorieCollider = transform.Find("CalorieCollider").GetComponent<Collider>();
+        foodCollider = transform.Find("FoodCollider").GetComponent<Collider>();
     }
 }
