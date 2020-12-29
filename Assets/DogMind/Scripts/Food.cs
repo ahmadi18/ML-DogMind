@@ -101,4 +101,14 @@ public class Food : MonoBehaviour
         // Change food color to indicate that it is empty
         foodMaterial.SetColor("_BaseColor", fullFoodColor);
     }
+
+    public void Awake()
+    {
+        // Find the food's mesh renderer and the main material
+        MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
+        foodMaterial = meshRenderer.material;
+
+        // Find colliders
+        flowerC
+    }
 }
