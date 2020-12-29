@@ -88,4 +88,17 @@ public class Food : MonoBehaviour
         // Return the amount of calories that was taken
         return calorieTaken;
     }
+
+    public void ResetFood()
+    {
+        // Refill the calories
+        calorieAmount = 1f;
+
+        // Enable the food and calorie colliders
+        calorieCollider.gameObject.SetActive(true);
+        foodCollider.gameObject.SetActive(true);
+
+        // Change food color to indicate that it is empty
+        foodMaterial.SetColor("_BaseColor", fullFoodColor);
+    }
 }
